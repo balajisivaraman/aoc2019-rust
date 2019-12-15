@@ -1,0 +1,13 @@
+[package]
+name = "aoc2019-rust"
+description = "Advent of Code 2019 Solution"
+license = "MIT"
+version = "0.1.0"
+authors = ["Balaji Sivaraman <balaji@balajisivaraman.com>"]
+edition = "2018"
+
+[[bin]]
+name = "day01"
+path = "src/day01.rs"
+
+[dependencies]
