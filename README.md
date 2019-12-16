@@ -17,7 +17,7 @@ Every day's solution is generated under a separate binary for ease of use. This
 can be run using `cargo` itself, like follows:
 
 ```
-$ cargo run day01
+$ cargo run --bin day01
 Day 01, Part 1: 3352674
 Day 01, Part 2: 5026151
 ```
