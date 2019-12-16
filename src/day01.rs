@@ -3,7 +3,7 @@ mod utils;
 use std::io::Error;
 use std::result::Result;
 
-use utils::read_input;
+use utils::read_lines_as_int_vector;
 
 fn fuel_required_for_mass(mass: &i32) -> i32 {
     mass / 3 - 2
@@ -36,7 +36,7 @@ fn additional_fuel_for_modules(module_masses: &Vec<i32>) -> i32 {
 }
 
 fn main() -> Result<(), Error> {
-    let input = read_input("input/day01")?;
+    let input = read_lines_as_int_vector("input/day01")?;
     println!("Day 01, Part 1: {}", fuel_for_modules(&input));
     println!("Day 01, Part 2: {}", additional_fuel_for_modules(&input));
     Ok(())
